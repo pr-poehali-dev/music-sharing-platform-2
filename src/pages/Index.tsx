@@ -119,19 +119,20 @@ const Index = () => {
             <h1 className="text-xl font-bold">MusicNet</h1>
           </div>
           <nav className="flex items-center space-x-6">
-            <Button variant="ghost" className="text-gray-300 hover:text-white">
+            <Button type="button" variant="ghost" className="text-gray-300 hover:text-white">
               <Icon name="Home" size={18} className="mr-2" />
               Головна
             </Button>
-            <Button variant="ghost" className="text-gray-300 hover:text-white">
+            <Button type="button" variant="ghost" className="text-gray-300 hover:text-white">
               <Icon name="Search" size={18} className="mr-2" />
               Пошук
             </Button>
-            <Button variant="ghost" className="text-gray-300 hover:text-white">
+            <Button type="button" variant="ghost" className="text-gray-300 hover:text-white">
               <Icon name="Users" size={18} className="mr-2" />
               Друзі
             </Button>
             <Button 
+              type="button"
               onClick={() => setIsLoggedIn(false)}
               className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition-all duration-200 hover:scale-105"
             >
@@ -156,15 +157,15 @@ const Index = () => {
             <CardContent>
               <div className="space-y-4">
                 <div className="flex space-x-4">
-                  <Button className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
+                  <Button type="button" className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
                     <Icon name="Upload" size={18} className="mr-2" />
                     Завантажити трек
                   </Button>
-                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button type="button" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
                     <Icon name="Video" size={18} className="mr-2" />
                     Додати відео
                   </Button>
-                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button type="button" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
                     <Icon name="Camera" size={18} className="mr-2" />
                     Фото
                   </Button>
@@ -202,7 +203,7 @@ const Index = () => {
                         {track.genre}
                       </Badge>
                       <span className="text-gray-400">{track.duration}</span>
-                      <Button size="sm" className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
+                      <Button type="button" size="sm" className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
                         <Icon name="Heart" size={16} className="mr-1" />
                         Лайк
                       </Button>
@@ -225,11 +226,11 @@ const Index = () => {
               <div className="space-y-4">
                 <p className="text-gray-400">Приєднуйтесь до живих сесій співу з іншими музикантами</p>
                 <div className="flex space-x-4">
-                  <Button className="bg-green-600 hover:bg-green-700 transition-all duration-200 hover:scale-105">
+                  <Button type="button" className="bg-green-600 hover:bg-green-700 transition-all duration-200 hover:scale-105">
                     <Icon name="Radio" size={18} className="mr-2" />
                     Створити сесію
                   </Button>
-                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                  <Button type="button" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
                     <Icon name="Users" size={18} className="mr-2" />
                     Приєднатися
                   </Button>
@@ -258,10 +259,10 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex space-x-2">
-                <Button size="sm" className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
+                <Button type="button" size="sm" className="bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
                   Редагувати
                 </Button>
-                <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                <Button type="button" size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
                   Налаштування
                 </Button>
               </div>
@@ -290,7 +291,7 @@ const Index = () => {
                       <p className="text-sm font-medium text-white">{user.name}</p>
                       <p className="text-xs text-gray-400">{user.status}</p>
                     </div>
-                    <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
+                    <Button type="button" size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
                       <Icon name="MessageCircle" size={14} />
                     </Button>
                   </div>
@@ -313,7 +314,7 @@ const Index = () => {
                   placeholder="Пошук музикантів..."
                   className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
                 />
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
+                <Button type="button" className="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-200 hover:scale-105">
                   Шукати
                 </Button>
               </div>
