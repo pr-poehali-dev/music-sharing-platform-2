@@ -54,12 +54,14 @@ const Index = () => {
                   />
                 </div>
                 <Button 
+                  type="button"
                   onClick={handleLogin}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-200 hover:scale-105"
                 >
                   Увійти
                 </Button>
                 <Button 
+                  type="button"
                   variant="outline" 
                   onClick={() => setCurrentView('register')}
                   className="w-full border-gray-600 text-gray-300 hover:bg-gray-800"
@@ -85,12 +87,14 @@ const Index = () => {
                   />
                 </div>
                 <Button 
+                  type="button"
                   onClick={handleLogin}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-lg transition-all duration-200 hover:scale-105"
                 >
                   Створити акаунт
                 </Button>
                 <Button 
+                  type="button"
                   variant="outline" 
                   onClick={() => setCurrentView('login')}
                   className="w-full border-gray-600 text-gray-300 hover:bg-gray-800"
